@@ -85,7 +85,7 @@
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
         pan.maximumNumberOfTouches = 1;
         pan.minimumNumberOfTouches = 1;
-        [_circleView addGestureRecognizer:pan];
+        [self addGestureRecognizer:pan];
     }
     return _circleView;
 }
